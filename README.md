@@ -15,3 +15,6 @@ A suite of autonomous agents and security analytics scripts for Kali Linux. This
 The agents are designed to run as background services within the laboratory infrastructure.
 EOF
 ,file_path:
+## Cross-References
+- **Infrastructure Hub:** See [sovereign-ai-infrastructure/infrastructure/kali-security-hub](../sovereign-ai-infrastructure/infrastructure/kali-security-hub)
+- **AI Integration:** Linked to [python-security-analytics](../python-security-analytics) (Morpheus pipeline).
