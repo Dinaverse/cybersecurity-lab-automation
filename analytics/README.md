@@ -1,84 +1,68 @@
-# 🛡️ Cybersecurity Lab Automation — Analytics Suite
+# 📊 Analytics & Security Scripts
 
-> *Python security analytics and autonomous agents for real-time log monitoring, network reconnaissance, and threat analysis on the Kali-Master node.*
+## Description
 
----
+A comprehensive collection of Python scripts for security analytics, log analysis, and system data processing. This module provides automated tools for parsing security logs, detecting anomalies, and tracking authorization events.
 
-## 🎯 Overview
+## Content
 
-This directory contains the **security analytics suite** — Python scripts and tools for automated log parsing, network scanning, access control analysis, and threat detection.
+- **Log Analysis:** Parse failed login attempts, track access patterns, analyze authorization events
+- **Network Reconnaissance:** Packet analysis, port scanning, network topology mapping
+- **Access Control:** User filtering, permission auditing, ACL validation
+- **Threat Detection:** Anomaly detection, threat scoring, correlation analysis
 
-**Status:** ✅ Active — 40+ scripts operational
-
----
-
-## 📦 Content Organization
-
-### Security Analysis Scripts
-- **/security** — Log analysis, network reconnaissance, access control
-- **/math_and_data** — Mathematical computations and data analysis (NumPy)
-- **/programming_exercises** — Data structure manipulation and algorithm practice
-
----
-
-## 🛠️ Core Analytics Tools
+## Scripts
 
 ### Log Analysis
-- `failed_login.py` — Parse and analyze failed authentication attempts
-- `access_logs.py` — Analyze system access patterns and anomalies
-- `auth_events.py` — Track authorization events and permission changes
 
-### Network Reconnaissance
-- `analyse_paquets.py` — Packet capture and analysis
-- `port_scan.py` — Network service discovery and enumeration
-- `network_mapper.py` — LAN topology mapping and asset discovery
+- `failed_login.py` — Extract and analyze failed authentication attempts
+- `access_logs.py` — Parse system access patterns and identify anomalies
+- `auth_events.py` — Track and correlate authorization events
+
+### Network Analysis
+
+- `analyse_paquets.py` — Packet capture analysis and traffic inspection
+- `port_scan.py` — Network service discovery and port enumeration
+- `network_mapper.py` — Discover and map network topology
 
 ### Access Control
-- `filtrage_utilisateurs.py` — User access filtering and validation
-- `permission_audit.py` — Permission compliance checking
-- `access_control.py` — ACL enforcement verification
+
+- `filtrage_utilisateurs.py` — Filter and validate user access
+- `permission_audit.py` — Audit file and directory permissions
+- `access_control.py` — Validate ACL enforcement and compliance
 
 ### Threat Detection
-- `threat_detection.py` — Anomaly detection and threat correlation
-- Pattern matching for known attack signatures
-- Behavioral analysis for zero-day detection
 
----
+- `threat_detection.py` — Analyze security events and score threats
+- `anomaly_detection.py` — Identify deviations from baseline behavior
 
-## 💻 Usage
+## Technical Documentation
 
-All scripts are standalone Python 3 tools with minimal external dependencies (NumPy for data analysis modules only).
+For detailed integration and security considerations, see:
+- [Main README](../README.md)
+- [MCP Security Fix](../docs/MCP_SECURITY_FIX.md)
+
+## Cross-References
+
+- **Infrastructure Hub:** [sovereign-ai-infrastructure](https://github.com/Dinaverse/sovereign-ai-infrastructure)
+- **Security Agents:** [cybersecurity-lab-automation](https://github.com/Dinaverse/cybersecurity-lab-automation)
+- **Related Scripts:** [python-security-analytics](https://github.com/Dinaverse/python-security-analytics)
+
+## Usage
+
+All scripts are designed to run as standalone tools or integrated into security workflows:
 
 ```bash
-# Log analysis example
-python3 failed_login.py --logfile /var/log/auth.log --threshold 5
+# Analyze failed logins
+python3 failed_login.py --log /var/log/auth.log
 
-# Network scanning
-python3 network_mapper.py --interface eth0 --subnet 192.168.1.0/24
+# Scan network
+python3 network_mapper.py --subnet 192.168.1.0/24
 
-# Access control audit
+# Audit permissions
 python3 permission_audit.py --path /home --recursive
 ```
 
 ---
 
-## 🔗 Integration
-
-These analytics scripts integrate with:
-- **Security-Ops Agent** — Autonomous log monitoring and incident response
-- **Net-Analyzer Agent** — Hourly network reconnaissance
-- **MCP Bridge** — Direct AI agent integration via Model Context Protocol
-- **NVIDIA Morpheus** — AI-powered security data processing pipeline
-
----
-
-## 📚 Related Documentation
-
-- **Main Repository:** [cybersecurity-lab-automation](../README.md)
-- **Infrastructure Hub:** [sovereign-ai-infrastructure](https://github.com/Dinaverse/sovereign-ai-infrastructure)
-- **AI Integration:** [python-security-analytics](https://github.com/Dinaverse/python-security-analytics)
-- **MCP Security Fix:** [MCP_SECURITY_FIX.md](../docs/MCP_SECURITY_FIX.md)
-
----
-
-*Security through automation. Defense through analytics.*
+*Automating security analysis. Defending through intelligence.*
